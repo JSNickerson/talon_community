@@ -110,7 +110,18 @@ keymap = {
     "talon reple": "~/.talon/bin/repl",
     "reverse": Key("ctrl-r"),
     "rerun": [Key("up"), Key("enter")],
-    "cd": ["cd ; ls -lsa", Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left")],
+    "cd": [
+        "cd ; ls -lsa",
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left"),
+        Key("left")
+    ],
     "cd wild": [
         "cd **; ls",
         Key("left"),
