@@ -30,7 +30,8 @@ def CursorText(s):
 context.keymap(
     {
         "const [<dgndictation>]": ["const ", text],
-        "var [<dgndictation>]": ["var ", text]
+        "var [<dgndictation>]": ["var ", text],
+        "function [<dgndictation>]": ["func ", text, " () ", "{}", Key("left"), Key("return")],
         # "let [<dgndictation>]": ["let ", text],
         # "static": "static ",
         # "args": ["()", Key("left")],
