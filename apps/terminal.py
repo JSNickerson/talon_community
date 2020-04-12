@@ -57,7 +57,7 @@ directory_shortcuts.update(config.load_config_json("directory_shortcuts.json"))
 
 def cd_directory_shortcut(m):
     directory = directory_shortcuts[m[1]]
-    insert(f"cd {directory}; ls")
+    insert(f"cd {directory}; ls -lsa")
     for _ in range(4):
         press("left")
     press("enter")
@@ -110,7 +110,7 @@ keymap = {
     "talon reple": "~/.talon/bin/repl",
     "reverse": Key("ctrl-r"),
     "rerun": [Key("up"), Key("enter")],
-    "cd": ["cd ; ls", Key("left"), Key("left"), Key("left"), Key("left")],
+    "cd": ["cd ; ls -lsa", Key("left"), Key("left"), Key("left"), Key("left")],
     "cd wild": [
         "cd **; ls",
         Key("left"),
@@ -132,7 +132,7 @@ keymap = {
     "directory {terminal.directory_shortcuts}": name_directory_shortcuts,
     "(ls | run ellis | run alice)": "ls\n",
     "(la | run la)": "ls -la\n",
-    # "durrup": "cd ..; ls\n",
+    "durrup": "cd ..; ls -lsa\n",
     "go back": "cd -\n",
     "dash <dgndictation> [over]": dash,
     "pseudo": "sudo ",
