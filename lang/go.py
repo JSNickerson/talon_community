@@ -32,6 +32,7 @@ context.keymap(
         "const [<dgndictation>]": ["const ", text],
         "var [<dgndictation>]": ["var ", text],
         "function [<dgndictation>]": ["func ", text, " () ", "{}", Key("left"), Key("return")],
+        "format": ["fmt"],
         # "let [<dgndictation>]": ["let ", text],
         # "static": "static ",
         # "args": ["()", Key("left")],
