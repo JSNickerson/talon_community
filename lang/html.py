@@ -10,7 +10,7 @@ from ..utils import (
     is_filetype,
 )
 
-FILETYPES = (".html", ".jsx", ".erb")
+FILETYPES = (".html", ".jsx", ".js", ".erb")
 
 context = Context("html", func=is_filetype(FILETYPES))
 
